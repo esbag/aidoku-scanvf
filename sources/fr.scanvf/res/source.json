@@ -2,7 +2,7 @@
 	"info": {
 		"id": "fr.scanvf",
 		"name": "Scan VF",
-		"version": 1,
+		"version": 2,
 		"url": "https://www.scan-vf.net",
 		"contentRating": 0,
 		"languages": ["fr"],

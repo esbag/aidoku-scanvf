@@ -82,7 +82,7 @@ pub fn chapter_number(title: &str) -> Option<f32> {
 
 pub fn status(value: &str) -> MangaStatus {
 	match value.to_ascii_lowercase().as_str() {
-		"complete" | "complet" | "completo" | "zakończone" | "concluído" | "finalizado"
+		"complete" | "complet" | "terminé" | "termine" | "fini" | "completo" | "zakończone" | "concluído" | "finalizado"
 		| "مكتملة" => MangaStatus::Completed,
 		"ongoing" | "مستمرة" | "en cours" | "em lançamento" | "prace w toku" | "ativo"
 		| "em andamento" | "activo" => MangaStatus::Ongoing,

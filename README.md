@@ -4,7 +4,7 @@ Source [Aidoku](https://aidoku.app) pour **Scan VF** (https://www.scan-vf.net), 
 
 Le site tourne sous *My Manga Reader CMS* : la source réutilise le template `mmrcms` de [Aidoku-Community/sources](https://github.com/Aidoku-Community/sources) (Apache-2.0 / MIT), légèrement adapté car scan-vf sert ses mangas à `/{slug}` et non à `/manga/{slug}`.
 
-> ⚠️ Statut : en développement. Les sélecteurs HTML sont ceux par défaut du CMS et doivent encore être vérifiés sur le site.
+> Statut : sélecteurs vérifiés sur le HTML du site (novembre 2026) : fiche, chapitres, pages, recherche, derniers chapitres et populaires. Pas encore testé dans Rakuyomi.
 
 ## Utilisation
 

@@ -54,8 +54,8 @@ pub trait Impl {
 			})
 			.or_else(|| manga.cover.clone());
 		manga.description = html
-			.select(".row .well")
-			.and_then(|mut els| els.next())
+			.select_first(".row .well p")
+			.or_else(|| html.select_first(".row .well"))
 			.and_then(|el| el.text());
 		manga.url = Some(url.into());
 		if let (Some(labels), Some(values)) = (
@@ -91,7 +91,7 @@ pub trait Impl {
 							.select("a")
 							.map(|els| els.filter_map(|tag| tag.text()).collect())
 					}
-					"status" => manga.status = helpers::status(&value_text),
+					"status" | "statut" => manga.status = helpers::status(&value_text),
 					_ => {}
 				}
 			}
